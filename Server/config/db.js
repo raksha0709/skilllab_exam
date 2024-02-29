@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb://localhost/food_ordering_app', {
+    await mongoose.connect('mongodb://localhost:27017/food_ordering_app', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
